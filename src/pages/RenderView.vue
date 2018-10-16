@@ -1,8 +1,13 @@
 <template>
   <q-layout>
     <q-page-container>
-      <q-page class="flex flex-center">
-          <h3>hi there</h3>
+      <q-page>
+          <div class="row full-width justify-center">
+            <h3>hi there</h3>
+          </div>
+          <div class="row full-width justify-center">
+              <p>this is /src/pages/RenderView.vue</p>
+          </div>
       </q-page>
       <router-view />
     </q-page-container>
