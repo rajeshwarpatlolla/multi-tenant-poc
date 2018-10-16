@@ -1,5 +1,5 @@
 <template>
-  <div>I am the footer.</div>
+  <div>I am ProductBlock.</div>
 </template>
 
 <script>
@@ -10,6 +10,3 @@ export default {
   }
 }
 </script>
-
-<style>
-</style>
