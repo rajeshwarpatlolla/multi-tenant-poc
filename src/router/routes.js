@@ -1,8 +1,20 @@
 const routes = [
     { 
         path: '/',
-        component: () => import ('pages/RenderView.vue')
-    }
+        component: () => import ('pages/RenderView.vue'),
+        name: 'home',
+    },
+    { 
+        path: '/shop',
+        component: () => import ('pages/RenderView.vue'),
+        name: 'shop',
+    },
+    { 
+      path: '/products',
+      component: () => import ('pages/RenderView.vue'),
+      name: 'products',
+  },
+    
 ]
 
 // Always leave this as last one
