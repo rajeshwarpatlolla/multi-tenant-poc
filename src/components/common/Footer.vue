@@ -1,32 +1,21 @@
 <template>
   <div 
-    class="footer-style"
-    
-    >
-    {{componentData.title}}
+    class="row layout-padding"
+    :style="'background-color:' + componentData.backgroundColor"
+  >
+    footer - {{componentData.title}}
   </div>
 </template>
 
 <script>
 export default {
-  // name: 'ComponentName',
-  name: 'comp-footer',
   data () {
-    return {}
+    return {
+      backgroundColor: 'background-color',
+    }
   },
   props:{
     componentData: {},
-    sectionIndex: Number,
   }
 }
 </script>
-
-<style scoped>
-  .footer-style{
-    width: 100%;
-    margin: 10px;
-    padding:2px;
-    border: 10px solid #eee;   
-    background-color: blanchedalmond;
-  }
-</style>

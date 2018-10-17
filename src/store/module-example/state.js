@@ -125,22 +125,19 @@ export default {
               "home":
               {
                 pageSections: [
-
+                  {
+                    component: () => import('components/common/Navigation'),
+                    componentData: {
+                      backgroundColor: '#ddd;',
+                      title: 'nav'
+                    }
+                  },
                   {
                     component: () => import('components/common/NewProducts'),
                     componentData: {
                       backgroundColor: '#9ef743;',
                       title: 'The New Products',
-                      productIDs: [234, 5654, 3243, 9834],
-                      name: 'Products',
-                    }
-                  },
-                  {
-                    component: () => import('components/common/Checkout'),
-                    componentData: {
-                      backgroundColor: '#ddaaff;',
-                      title: 'This is my checkout page',
-                      name: 'Checkout',
+                      productIDs: [234, 5654, 3243, 9834]
                     }
                   },
                   {

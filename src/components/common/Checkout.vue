@@ -1,33 +1,21 @@
 <template>
-    <div 
-    class="footer-style"
+  <div 
+    class="row layout-padding"
     :style="'background-color:' + componentData.backgroundColor"
   >
-    {{componentData.title}}
+    checkout - {{componentData.title}}
   </div>
 </template>
 
 <script>
 export default {
-    // name: 'ComponentName',
-    name: 'checkout',
-    data () {
-        return {}
-    },
-    props:{
-        componentData: [Array, Object],
-        sectionIndex: Number,
+  data () {
+    return {
+      backgroundColor: 'background-color',
     }
+  },
+  props:{
+    componentData: {},
+  }
 }
 </script>
-
-<style scoped>
-    .footer-style{
-        width: 100%;
-        margin: 10px;
-        padding:2px;
-        border: 10px solid #eee;
-        background-color: antiquewhite;
-    }
-</style>
-      
