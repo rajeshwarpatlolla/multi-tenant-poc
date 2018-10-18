@@ -1,8 +1,12 @@
 <template>
   <q-layout>
     <q-page-container>
-      <q-page >
-          <h3>Components List</h3>
+      <q-page>
+          <div class="row full-width layout-padding">
+            <h3 class="col">Components List</h3>
+            {{ currentRouteLink }}
+            {{ eJSON }}
+          </div>
 
           <component 
                 v-if="eJSON.pageSections" 
@@ -31,6 +35,7 @@
         data() {
             return {
                 eJSON: {},
+                currentRouteLink: window.location.pathname
             }
         },
         computed: {
@@ -38,12 +43,12 @@
             ...mapGetters([
                 'store/getCompanyDetails'
             // ...
-            ])  
+            ]),
+            ViewComponent () {
+              //return routes[this.currentRoute] || NotFound
+            }  
         },
-        components: {            
-        },
-        methods: {
-        },
+       
         created(){
 
             // code to get company details
@@ -54,6 +59,10 @@
             
             let companyId = this.$route.query.e;
             let currentRoute = this.$router.currentRoute;
+
+            let currentComp = this.ViewComponent;   
+
+            //debugger;
 
             let companydata = compData.filter((item,index) => {    
                                         
@@ -66,7 +75,7 @@
                 let mycode = companydata[0][companyId].routes;
                 
                 let latCompanydata = mycode.filter((items,index) => {    
-                    let currRouteData= items[currentRoute.name];
+                    let currRouteData= items[this.currentRouteLink];
                                         
                     if(currRouteData){                        
                         this.eJSON = currRouteData; 
