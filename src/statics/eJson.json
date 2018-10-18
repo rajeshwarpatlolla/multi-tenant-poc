@@ -1,0 +1,37 @@
+{
+	"routes": [
+		{
+			"route": "/",
+			"pageSections": [
+				{
+					"id": 1,
+					"component": "headerComp",
+					"componentPath": "/common/header",
+					"componentData": {
+						"backgroundColor": "#efefef;",
+						"title": "Welcome to my Cool Shop"
+					}
+				},
+				{
+					"id": 2,
+					"component": "productBlock",
+					"componentPath": "/common/productBlock",
+					"componentData": {
+						"backgroundColor": "#2ef743;",
+						"title": "New Products",
+						"productIDs": [1, 2, 3]
+					}
+				},
+				{
+					"id": 3,
+					"component": "footerComp",
+					"componentPath": "/common/footer",
+					"componentData": {
+						"backgroundColor": "#efefef;",
+						"title": "Terms and conditions"
+					}
+				}
+			]
+		}
+	]
+}

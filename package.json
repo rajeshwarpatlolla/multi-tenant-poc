@@ -1,0 +1,32 @@
+{
+  "name": "spa",
+  "version": "1.0.0",
+  "description": "purple.spa",
+  "productName": "purple.spa",
+  "cordovaId": "org.cordova.quasar.app",
+  "author": "Josh Mellicker <josh@platformpurple.com>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@jmellicker/j_": "^1.0.0",
+    "axios": "^0.18.0",
+    "moment": "^2.22.2",
+    "vue-i18n": "^7.3.3"
+  },
+  "devDependencies": {
+    "quasar-cli": "^0.17.0",
+    "strip-ansi": "=3.0.1"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}
