@@ -3,9 +3,7 @@
     <q-page-container>
       <q-page>
           <div class="row full-width layout-padding">
-            <h3 class="col">Components List</h3>
-            {{ currentRouteLink }}
-            {{ eJSON }}
+            <h4>showing components for route: <strong>{{ currentRouteLink }}</strong></h4>
           </div>
 
           <component 
