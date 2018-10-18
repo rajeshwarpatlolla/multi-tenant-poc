@@ -9,6 +9,7 @@
     <q-btn>
         shop
     </q-btn>
+    {{ nav }}
   </div>
 </template>
 
@@ -21,6 +22,11 @@ export default {
   },
   props:{
     componentData: {},
+  },
+  computed: {
+    nav() {
+        return this.$store.state
+    },
   }
 }
 </script>
